@@ -1,4 +1,4 @@
-import { Stagiaire} from './stagiaire';
+import { Stagiaire} from './Stagiaire';
 import { Formation } from './Formation';
 
 
@@ -30,15 +30,20 @@ Formation1.addStagiaire(Stagiare3);
 Formation1.addStagiaire(Stagiare4);
 
 
+
 Stagiare1.CalculerMoyenne();
 Stagiare2.CalculerMoyenne();
 Stagiare3.CalculerMoyenne();
 Stagiare4.CalculerMoyenne();
 
 
-Formation1.CalculerMoyenneFormation(Stagiare1[0]);
-Formation2.CalculerMoyenneFormation(Stagiare2[0]);
-Formation3.CalculerMoyenneFormation(Stagiare3[0]);
+Formation1.CalculerMoyenneFormation(Formation1.getStagiaires());
+Formation2.CalculerMoyenneFormation(Formation2.getStagiaires());
+Formation3.CalculerMoyenneFormation(Formation3.getStagiaires());
+
+
+
+
 
 
 Formation1.getIndexMax();
@@ -56,10 +61,14 @@ console.log(Formation1.getStagiaires());
 console.log(Formation1.getNbrHours());
 console.log(Formation1.getInitule());
 
+console.log(Formation1.CalculerMoyenneFormation(Formation1.getStagiaires()));
+console.log(Formation2.CalculerMoyenneFormation(Formation2.getStagiaires()));
+console.log(Formation3.CalculerMoyenneFormation(Formation3.getStagiaires()));
 
-console.log(Formation1.CalculerMoyenneFormation(Stagiare1[0]));
+
+/* console.log(Formation1.CalculerMoyenneFormation(Stagiare1[0]));
 console.log(Formation2.CalculerMoyenneFormation(Stagiare2[0]));
-console.log(Formation3.CalculerMoyenneFormation(Stagiare3[0]));
+console.log(Formation3.CalculerMoyenneFormation(Stagiare3[0])); */
 
 
 console.log(Formation1.getIndexMax());

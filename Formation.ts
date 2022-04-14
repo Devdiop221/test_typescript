@@ -40,7 +40,7 @@ export class Formation {
         }
 }
 
-    public CalculerMoyenneFormation = (stagiaires: Stagiaire[]): number => {
+    public CalculerMoyenneFormation = (array: Stagiaire[]): number => {
         let somme: number = 0;
         for (let i = 0; i < this.stagiaires.length; i++) {
             somme += this.stagiaires[i].CalculerMoyenne();
