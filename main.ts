@@ -66,10 +66,6 @@ console.log(Formation2.CalculerMoyenneFormation(Formation2.getStagiaires()));
 console.log(Formation3.CalculerMoyenneFormation(Formation3.getStagiaires()));
 
 
-/* console.log(Formation1.CalculerMoyenneFormation(Stagiare1[0]));
-console.log(Formation2.CalculerMoyenneFormation(Stagiare2[0]));
-console.log(Formation3.CalculerMoyenneFormation(Stagiare3[0])); */
-
 
 console.log(Formation1.getIndexMax());
 console.log(Formation2.getIndexMax());

@@ -1,49 +1,47 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.Stagiaire = void 0;
-var Stagiaire = /** @class */ (function () {
-    function Stagiaire(nom, notes) {
-        var _this = this;
+class Stagiaire {
+    constructor(nom, notes) {
         this.nom = nom;
         this.notes = notes;
-        this.CalculerMoyenne = function () {
-            var somme = 0;
-            for (var i = 0; i < _this.notes.length; i++) {
-                somme += _this.notes[i];
+        this.CalculerMoyenne = () => {
+            let somme = 0;
+            for (let i = 0; i < this.notes.length; i++) {
+                somme += this.notes[i];
             }
-            return somme / _this.notes.length;
+            return somme / this.notes.length;
         };
-        this.trouverMax = function () {
-            var max = _this.notes[0];
-            for (var i = 0; i < _this.notes.length; i++) {
-                if (_this.notes[i] > max) {
-                    max = _this.notes[i];
+        this.trouverMax = () => {
+            let max = this.notes[0];
+            for (let i = 0; i < this.notes.length; i++) {
+                if (this.notes[i] > max) {
+                    max = this.notes[i];
                 }
             }
             return max;
         };
-        this.trouverMin = function () {
-            var min = _this.notes[0];
-            for (var i = 0; i < _this.notes.length; i++) {
-                if (_this.notes[i] < min) {
-                    min = _this.notes[i];
+        this.trouverMin = () => {
+            let min = this.notes[0];
+            for (let i = 0; i < this.notes.length; i++) {
+                if (this.notes[i] < min) {
+                    min = this.notes[i];
                 }
             }
             return min;
         };
     }
-    Stagiaire.prototype.getNotes = function () {
+    getNotes() {
         return this.notes;
-    };
-    Stagiaire.prototype.getNom = function () {
+    }
+    getNom() {
         return this.nom;
-    };
-    Stagiaire.prototype.setNom = function (nom) {
+    }
+    setNom(nom) {
         this.nom = nom;
-    };
-    Stagiaire.prototype.setNotes = function (notes) {
+    }
+    setNotes(notes) {
         this.notes = notes;
-    };
-    return Stagiaire;
-}());
+    }
+}
 exports.Stagiaire = Stagiaire;
