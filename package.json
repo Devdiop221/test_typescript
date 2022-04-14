@@ -1,0 +1,20 @@
+{
+  "name": "test_typescript",
+  "version": "1.0.0",
+  "description": "Exam of 10 hours of Typescrypt course ",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devdiop221/test_typescript.git"
+  },
+  "author": "Devdiop221",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Devdiop221/test_typescript/issues"
+  },
+  "homepage": "https://github.com/Devdiop221/test_typescript#readme"
+}

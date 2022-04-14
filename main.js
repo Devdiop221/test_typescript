@@ -1,74 +1,46 @@
-import { Stagiaire} from './stagiaire';
-import { Formation } from './Formation';
-
-
-let Formation1: Formation = new Formation("Formation1", 10, []);
-let Formation2: Formation = new Formation("Formation2", 10, []);
-let Formation3: Formation = new Formation("Formation3", 10, []);
-
-
-let Stagiare1 = new Stagiaire('Shikamaru', [10, 20, 30, 40, 50]);
-let Stagiare2 = new Stagiaire('Sakura', [10, 20, 30, 40, 50]);
-let Stagiare3 = new Stagiaire('Sasuke', [10, 20, 30, 40, 50]);
-let Stagiare4 = new Stagiaire('Naruto', [10, 20, 30, 40, 50]);
-
+"use strict";
+exports.__esModule = true;
+var stagiaire_1 = require("./stagiaire");
+var Formation_1 = require("./Formation");
+var Formation1 = new Formation_1.Formation("Formation1", 10, []);
+var Formation2 = new Formation_1.Formation("Formation2", 10, []);
+var Formation3 = new Formation_1.Formation("Formation3", 10, []);
+var Stagiare1 = new stagiaire_1.Stagiaire('Shikamaru', [10, 20, 30, 40, 50]);
+var Stagiare2 = new stagiaire_1.Stagiaire('Sakura', [10, 20, 30, 40, 50]);
+var Stagiare3 = new stagiaire_1.Stagiaire('Sasuke', [10, 20, 30, 40, 50]);
+var Stagiare4 = new stagiaire_1.Stagiaire('Naruto', [10, 20, 30, 40, 50]);
 Stagiare1.setNom('Shikamaru');
 Stagiare2.setNom('Sakura');
 Stagiare3.setNom('Sasuke');
 Stagiare4.setNom('Naruto');
-
-
 Stagiare1.setNotes([10, 20, 30, 40, 50]);
 Stagiare2.setNotes([10, 20, 30, 40, 50]);
 Stagiare3.setNotes([10, 20, 30, 40, 50]);
 Stagiare4.setNotes([10, 20, 30, 40, 50]);
-
-
 Formation1.addStagiaire(Stagiare1);
 Formation1.addStagiaire(Stagiare2);
 Formation1.addStagiaire(Stagiare3);
 Formation1.addStagiaire(Stagiare4);
-
-
 Stagiare1.CalculerMoyenne();
 Stagiare2.CalculerMoyenne();
 Stagiare3.CalculerMoyenne();
 Stagiare4.CalculerMoyenne();
-
-
 Formation1.CalculerMoyenneFormation(Stagiare1[0]);
 Formation2.CalculerMoyenneFormation(Stagiare2[0]);
 Formation3.CalculerMoyenneFormation(Stagiare3[0]);
-
-
 Formation1.getIndexMax();
 Formation2.getIndexMax();
 Formation3.getIndexMax();
-
-
 Formation1.removeStagiaire(Stagiare1);
 Formation1.removeStagiaire(Stagiare2);
 Formation1.removeStagiaire(Stagiare3);
 Formation1.removeStagiaire(Stagiare4);
-
-
 console.log(Formation1.getStagiaires());
 console.log(Formation1.getNbrHours());
 console.log(Formation1.getInitule());
-
-
 console.log(Formation1.CalculerMoyenneFormation(Stagiare1[0]));
 console.log(Formation2.CalculerMoyenneFormation(Stagiare2[0]));
 console.log(Formation3.CalculerMoyenneFormation(Stagiare3[0]));
-
-
 console.log(Formation1.getIndexMax());
 console.log(Formation2.getIndexMax());
 console.log(Formation3.getIndexMax());
-
-
-
-
-
-
-
